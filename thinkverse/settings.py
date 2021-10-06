@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-t%sh&$%xar7y1a8qufs(lf4cd3%iade=)ff(=cv#g9w5(s$2^m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = false
+DEBUG = true
 
 ALLOWED_HOSTS = ['thinkverse.herokuapp.com/','127.0.0.1']
 
