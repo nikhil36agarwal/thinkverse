@@ -1,0 +1,25 @@
+{% extends 'mysite/main.html' %}
+{% block content %}
+<div class="container">
+    <h1 style="margin-left: -100px;">Top Trump Headlines 
+        <a href="{% url 'homepage' %}">
+            <button type="button" class="btn btn-default btn-lg" style="position: absolute; right:220px ">
+                Change
+            </button></a></h1><br>
+    </div>
+    <div class="row container-fluid" style="padding-left: 5px;">
+        <br>
+        {% for i, urls in mylist %}
+        <div  >
+            <div class="col-sm-2 container img-thumbnail" style="height: 300px;width:20%">
+                <a href="{{ urls }}">
+                    <img  
+                    src="{{ i }}" 
+                    alt="no-image-found"style="height: 100%; width:100%; padding-top: 2px;">
+                </a>
+              </div>
+        </div>
+        {% endfor %}
+    
+    </div>
+{% endblock %}

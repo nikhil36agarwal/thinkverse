@@ -1,0 +1,1 @@
+web: guinicorn thinkverse.wsgi --log-file -
